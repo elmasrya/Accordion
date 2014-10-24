@@ -1,39 +1,19 @@
-
-  $('.top').on('click',function() {
-  $('.text').addClass('close');
-  $('this').next().find('.text').removeClass('close');
-  $('this').next().find('.text').addClass('open');
-});
-
-/*
-$('.top2').on('click',function() {
+$('.contentText2').css("display","none");
+$('.contentText3').css("display","none");
 
 
-  $('.text2').removeClass('text2');
-
-
-
-
-});
-
-$('.top3').on('click',function() {
-
-  $('.text3').removeClass('text3');
-
-});
-
-/*
-$('.top2').click(function() {
-
-
-
-  $('.box2').removeClass('text2');
-});
-
-$('.top3').click(function() {
-
-
-
-  $('.box3').removeClass('text3');
-});
-*/
+$('#content1').click(function(){
+  $('.contentText1').css("display","block");
+  $('.contentText2').css("display","none");
+  $('.contentText3').css("display","none");
+    });
+$('#content2').click(function(){
+  $('.contentText2').css("display","block");
+  $('.contentText1').css("display","none");
+  $('.contentText3').css("display","none");
+    });
+$('#content3').click(function(){
+  $('.contentText3').css("display","block");
+  $('.contentText1').css("display","none");
+  $('.contentText2').css("display","none");
+    });
